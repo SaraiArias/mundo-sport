@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contacto con Mundo Sport, la tienda líder en productos deportivos. Haz tus consultas sobre productos, envíos o devoluciones.">
+  <title>Contacto - Mundo Sport</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    
+    .header-container {
+        position: relative;
+        text-align: center;
+    }
+
+    .header-container img {
+        width: 150px;
+    }
+
+    .header-container h1 {
+        color: white;
+        font-size: 2rem;
+        margin-top: 10px;
+    }
+
+    nav {
+        margin-top: 20px;
+    }
+
+    nav a {
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        color: #ffffff;
+    }
+
+    
+    .buttons-container {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        display: flex;
+        align-items: center;
+        gap: 20px; 
+    }
+
+    .user-btn, .cart-btn {
+        background-color: #000000;
+        color: white;
+        padding: 10px;
+        border-radius: 50%;
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .user-btn:hover, .cart-btn:hover {
+        background-color: #0097a7;
+    }
+
+    
+    .search-form {
+        margin-top: 15px;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .search-container {
+        display: flex;
+        background-color: white;
+        border-radius: 0px;
+        overflow: hidden;
+        padding: 1px 10px;
+    }
+
+    .search-container input {
+        flex: 1;
+        padding: 12px;
+        border: none;
+        outline: none;
+        font-size: 1rem;
+    }
+
+    .search-container button {
+        background-color: #ffffff;
+        color: white;
+        padding: 12px 15px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .search-container button:hover {
+        background-color: #0097a7;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="header-container">
+      <img src="./imagenes/logo.jpg" alt="logo de Mundo Sport" width="150">
+      <h1>Mundo Sport</h1>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="sobre nosotros.html">Sobre Nosotros</a>
+        <a href="productos.html">Productos</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+      <form class="search-form">
+        <div class="search-container">
+          <input type="text" placeholder="Buscar...">
+          <button type="submit"><i class="fas fa-search"></i></button>
+        </div>
+      </form>
+      
+      <div class="buttons-container">
+        <button class="user-btn"><i class="fas fa-user"></i></button>
+        <button class="cart-btn"><i class="fas fa-shopping-cart"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="contacto" class="contacto-enhanced">
+      <h2>Contacto</h2>
+      <p>¿Tienes dudas sobre talles, envíos o devoluciones? Escríbenos o visítanos.</p>
+
+      <div class="contact-info enhanced-box">
+        <p><strong>📍 Dirección:</strong> Av. de la Moda 123, Ciudad Fashion</p>
+        <p><strong>📞 Teléfono:</strong> +54 11 1234-5678</p>
+        <p><strong>🕒 Horarios:</strong> Lunes a Sábado de 10 a 20 hs</p>
+        <p><strong>📧 Email:</strong> contacto@tiendaropa.com</p>
+      </div>
+
+      <form action="https://formsubmit.co/tuemail@ejemplo.com" method="POST" class="contact-form enhanced-box">
+        <input type="hidden" name="_captcha" value="false">
+
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="asunto">Asunto:</label>
+        <input type="text" id="asunto" name="asunto" placeholder="Consulta sobre producto, envío, etc." required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+        <div class="button-group">
+          <input type="submit" value="Enviar" class="btn-enviar">
+          <input type="reset" value="Borrar" class="btn-reset">
+        </div>
+      </form>
+
+      <div class="social-links">
+        <p><strong>También podés encontrarnos en:</strong></p>
+        <a href="https://www.instagram.com/tu_tienda" target="_blank">Instagram</a> |
+        <a href="https://www.facebook.com/tu_tienda" target="_blank">Facebook</a> |
+        <a href="https://wa.me/541112345678" target="_blank">WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Mundo Sport - Todos los derechos reservados.</p>
+    <div class="social-links">
+      <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+      <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+    </div>
+  </footer>
+
+</body>
+
+</html>

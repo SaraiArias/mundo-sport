@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Sport - Tienda Online</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #060606;
+        }
+
+        header {
+            background-color: #000000;
+            padding: 20px 5%;
+            text-align: center;
+            position: relative;
+            min-height: 100px;
+        }
+
+        .logo-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .logo-container img {
+            width: 150px;
+        }
+
+        .logo-container h1 {
+            color: white;
+            font-size: 2rem;
+            margin-top: 10px;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+        }
+
+        .search-form {
+            margin-top: 15px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .search-container {
+            display: flex;
+            background-color: white;
+            border-radius: 0px;
+            overflow: hidden;
+            padding: 1px 10px;
+        }
+
+        .search-container input {
+            flex: 1;
+            padding: 12px;
+            border: none;
+            outline: none;
+            font-size: 1rem;
+        }
+
+        .search-container button {
+            background-color: #ffffff;
+            color: white;
+            padding: 12px 15px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .search-container button:hover {
+            background-color: #0097a7;
+        }
+
+        
+        .btn-container {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 20px; 
+        }
+        .user-btn, .cart-btn {
+            background-color: #000000;
+            color: white;
+            padding: 10px;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px; 
+            height: 50px; 
+        }
+
+        .user-btn:hover, .cart-btn:hover {
+            background-color: #0097a7;
+        }
+
+        main {
+            padding: 15px 5% 40px;
+        }
+
+        .product-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .product-row {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .product-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px;
+            flex: 1 1 30%;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .product-card h3 {
+            margin-top: 15px;
+            font-size: 1.3rem;
+        }
+
+        .product-card p {
+            font-size: 1.1rem;
+            margin: 10px 0;
+        }
+
+        .product-card .btn {
+            background-color: #00bcd4;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        footer {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        .social-links {
+            margin-top: 10px;
+        }
+
+        .social-links a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.2rem;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo-container">
+        <img src="./imagenes/logo.jpg" alt="Logo de Mundo Sport">
+        <h1>Mundo Sport</h1>
+    </div>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="sobre nosotros.html">Sobre Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+    
+    <div class="btn-container">
+        <button class="user-btn"><i class="fas fa-user"></i></button>
+        <button class="cart-btn"><i class="fas fa-shopping-cart"></i></button>
+    </div>
+</header>
+
+<main>
+    <section class="product-section">
+        <h2>Nuestros Productos</h2>
+        <div class="product-row">
+            <div class="product-card">
+                <img src="./imagenes/zapatillas.jpg" alt="Zapatillas">
+                <h3>Zapatillas</h3>
+                <p>$89.99</p>
+                <a href="#" class="btn">Añadir al carrito</a>
+            </div>
+            <div class="product-card">
+                <img src="./imagenes/esterilla de yoga.jpg" alt="Esterilla de Yoga">
+                <h3>Esterilla de Yoga</h3>
+                <p>$29.99</p>
+                <a href="#" class="btn">Añadir al carrito</a>
+            </div>
+            <div class="product-card">
+                <img src="./imagenes/juego de pesas.jpg" alt="Pesas">
+                <h3>Juego de Pesas</h3>
+                <p>$59.99</p>
+                <a href="#" class="btn">Añadir al carrito</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Mundo Sport - Todos los derechos reservados.</p>
+    <div class="social-links">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+</footer>
+
+</body>
+</html>

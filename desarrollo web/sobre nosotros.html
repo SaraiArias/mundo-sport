@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Nosotros - Mundo Sport</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      color: #060606;
+    }
+
+    header {
+      background-color: #000000;
+      padding: 20px 5%;
+      text-align: center;
+      position: relative;
+    }
+
+    .logo-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .logo-container img {
+      width: 150px;
+    }
+
+    .logo-container h1 {
+      color: white;
+      font-size: 2rem;
+      margin-top: 10px;
+    }
+
+    nav {
+      margin-top: 20px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+    }
+
+    .search-form {
+      margin-top: 15px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .search-container {
+      display: flex;
+      background-color: white;
+      border-radius: 0px; 
+      overflow: hidden;
+      border: 1px solid #ccc;
+    }
+
+    .search-container input {
+      flex: 1;
+      padding: 12px;
+      border: none;
+      outline: none;
+      font-size: 1rem;
+    }
+
+    .search-container button {
+      background-color: #ffffff;
+      color: white;
+      padding: 12px 15px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .search-container button i {
+      font-size: 1.2rem;
+    }
+
+    /* Estilos para los botones de usuario y carrito */
+    .buttons-container {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      align-items: center;
+      gap: 20px; /* Espacio entre los botones */
+    }
+
+    .user-btn, .cart-btn {
+      background-color: #000000;
+      color: white;
+      padding: 10px;
+      border-radius: 50%;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .user-btn:hover, .cart-btn:hover {
+      background-color: #0097a7;
+    }
+
+    main {
+      padding: 60px 5% 40px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    .team-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .team-member {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      padding: 20px;
+      max-width: 250px;
+      width: 100%;
+      transition: transform 0.3s ease;
+    }
+
+    .team-member:hover {
+      transform: translateY(-5px);
+    }
+
+    .team-member img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    .social-links {
+      margin-top: 10px;
+    }
+
+    .social-links a {
+      color: white;
+      margin: 0 10px;
+      font-size: 1.2rem;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo-container">
+    <img src="./imagenes/logo.jpg" alt="logo de Mundo Sport">
+    <h1>Mundo Sport</h1>
+  </div>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="productos.html">Producto</a>
+    <a href="sobre nosotros.html">Sobre Nosotros</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+  <form class="search-form">
+    <div class="search-container">
+      <input type="text" placeholder="Buscar...">
+      <button type="submit"><i class="fas fa-search"></i></button>
+    </div>
+  </form>
+
+  <!-- Aquí van los botones de Usuario y Carrito -->
+  <div class="buttons-container">
+    <button class="user-btn"><i class="fas fa-user"></i></button>
+    <button class="cart-btn"><i class="fas fa-shopping-cart"></i></button>
+  </div>
+</header>
+
+<main>
+  <section>
+    <p>En Mundo Sport somos una empresa líder en el comercio de equipos y accesorios deportivos. Con más de 5 años de experiencia en el mercado, nos hemos consolidado como un referente en el sector, ofreciendo productos de alta calidad para los entusiastas del deporte. Nuestra misión es proveer a cada uno de nuestros clientes con lo mejor en tecnología deportiva, garantizando no solo productos de vanguardia, sino también un excelente servicio al cliente.</p>
+    <p>Trabajamos con las mejores marcas nacionales e internacionales para ofrecer una variedad de productos que cubren todas las necesidades de nuestros clientes, desde aquellos que se inician en el deporte hasta los más profesionales. Además, en nuestra empresa nos esforzamos por mantenernos a la vanguardia, buscando siempre innovar en las tendencias deportivas y en la experiencia de compra.</p>
+    <p>Lo que nos distingue en el mercado es nuestra filosofía centrada en la satisfacción total de nuestros clientes. Cada miembro de nuestro equipo comparte el compromiso de brindar un servicio personalizado y de alta calidad, asegurando que cada interacción sea una experiencia única. Ya sea que nuestros clientes compren en nuestra tienda online o en nuestra tienda física, siempre garantizamos la misma atención excepcional y productos que cumplen con los más altos estándares.</p>
+    <p>En Mundo Sport, nos apasiona el deporte tanto como a nuestros clientes, y estamos comprometidos a seguir creciendo, innovando y ofreciendo lo mejor. Gracias por elegirnos como tu aliado en el mundo deportivo. ¡Juntos seguimos avanzando!</p>
+  </section>
+
+  <section>
+    <h2>Conoce a Nuestro Equipo</h2>
+    <div class="team-container">
+      <article class="team-member">
+        <img src="./imagenes/maria.jpg" alt="Maria Fernandez">
+        <h3>Maria Fernandez</h3>
+        <p><strong>Jefa de Administración</strong></p>
+        <p>Maria supervisa y coordina las actividades administrativas de nuestra empresa, asegurando el funcionamiento óptimo de los procesos internos.</p>
+      </article>
+      <article class="team-member">
+        <img src="./imagenes/ulises.jpg" alt="Ulises Gimenez">
+        <h3>Ulises Gimenez</h3>
+        <p><strong>Director de Marketing</strong></p>
+        <p>Ulises es responsable de la estrategia y ejecución del marketing, creando campañas innovadoras que posicionan a Mundo Sport en el mercado.</p>
+      </article>
+      <article class="team-member">
+        <img src="./imagenes/jose.jpg" alt="Jose Arias">
+        <h3>Jose Arias</h3>
+        <p><strong>Atención al Cliente</strong></p>
+        <p>Jose se asegura de brindar un servicio de atención al cliente excepcional, resolviendo dudas y brindando apoyo a nuestros clientes.</p>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <h3>Nuestros Valores:</h3>
+    <p>Honestidad</p>
+    <p>Responsabilidad</p>
+    <p>Respeto</p>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Mundo Sport - Todos los derechos reservados.</p>
+  <div class="social-links">
+    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+  </div>
+</footer>
+
+</body>
+</html>
